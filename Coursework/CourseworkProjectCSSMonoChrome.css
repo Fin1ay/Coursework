@@ -1,0 +1,122 @@
+/*This is the alternate Cascading Style Sheet for all pages relating to my coursework project:
+Finlay Smith
+1703229*/
+/*I was unable to find a way to change the style of the pages with the click of a button so changed it so that new pages with this alternate scheme were loaded instead
+This is identical to the other stylesheet but with alternate colours*/
+
+img {
+ float:left;
+ padding:2px;
+ background-color:darkgrey;
+}
+
+button{
+  padding: 9px 19px;
+  color: #grey;
+  font-size: 13px;
+  background-color: darkgray;
+  border-color: #999999;
+}
+
+body{
+  font-family: Arial;
+  background-color:grey;
+  color: black;
+}
+
+header {
+  background-color: darkgrey;
+ height: 120px;
+ padding-left: 40px; /*This changed the distance from the left hand side of the start of the header*/
+
+ border-color: darkgrey; /*Changes the style of the outside of the header*/
+ border-style: solid;
+ border-width: 5px; /*Size of the border*/
+}
+
+footer { /*Affects everything in the footer*/
+ width: 100%;
+ bottom: 0;
+ background-color: #999999; /*Makes the colour of the footer a dark red*/
+ height: 100px; /*Makes the size of the footer*/
+}
+
+ul { /*Affects all unordered lists*/
+ list-style-type: none;
+
+}
+
+li { /*Automatically makes list elements stay to the left*/
+ float: left;
+}
+
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 4px;
+}
+
+
+div.gallery { /*Changes all galleries*/
+margin: 5px;
+border: 1px solid #ccc;
+float: center;
+display: inline;
+width: 180px;
+}
+
+div.gallery:hover {
+border: 1px solid #777;
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+
+.floatleft { /*formats the floatleft functions*/
+    float:left; /*The section will begin on the left of the screen*/
+    width: 8%; /*sets the width of the section*/
+    background-color: #999999;
+    height: 1px; /*Ensures that the section is there so that it forces the central section into the correct position*/
+    display: inline-block; /*This allows the sections to be displayed side by side*/
+}
+
+.floatright {
+    float:right;
+    width: 9%;
+    background-color: #664444;
+    height: 100%;
+    display: inline-block;
+}
+
+.floatcenter {
+    float:center;
+    width: 82%;
+    background-color: darkgray;
+    height: 100%;
+    display: inline-block;
+    padding: 8px /*Changes where the text begins in the section*/
+}
+
+
+
+#dogandMe { /*Changes the specific image with ID of "dogandme"*/
+  float: inherit; /*Makes text appear after the image*/
+  style=width:200px;
+  height:200px;
+  border:10; /*Sets the dimensions of the image*/
+  padding:2px;
+  border:2px solid black;
+  background-color:black;
+}
