@@ -2,104 +2,98 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="CourseworkProjectCSSMonoChrome.css">
-    <title>Finlay's Website</title>
+    <link rel="stylesheet" type="text/css" href="CourseworkProjectCSSMonoChrome.css"><!--This links the current page to the stylesheet -->
+    <title>Finlay's Website</title><!-- This will be displayed in the tab name of the browser -->
   </head>
 
 
-
   <body>
-    <header>
-      <a href ="E:\Course Work\Coursework\HomePageMC.html">
-        <img src="Sandy and me.jpg"  style="width:119px;height:119px;border:10;">
-      </a>
-        <h1>Finlay Smith </h1>
+     <header>
+        <a href ="https://fin1ay.github.io/Coursework/Coursework/HomePageMC"> <!--This creates a link to the home page through an image in the header-->
+          <img id="homepageimg" img src="Images\Sandy and me.jpg">
+        </a>
 
-      <nav class="col-md-12">
-        <ul class="nav nav-tabs bg-primary">
-          <li class="nav-item">
-            <a href="E:\Course Work\Coursework\AboutMePageMC.html">
-                <button>About me</button>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="E:\Course Work\Coursework\MyGoalsandProjectsMC.html">
-                <button>My Goals and Projects</button>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="E:\Course Work\Coursework\CVMC.html">
-                <button>CV</button>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="E:\Course Work\Coursework\ContactMeMC.html">
-                <button>Contact Me</button>
+        <h1>CV</h1> <!--Adds a header to the top of the page-->
+
+        <ul class="nav nav-tabs bg-primary"> <!-- This creates an unordered list that will be displayed as a navigation bar at the top of the page-->
+          <li class="nav-item"> <!--This makes the code until </li> an element in the unordered list. -->
+          <a href="https://fin1ay.github.io/Coursework/Coursework/AboutMePageMC"> <!--This serves to link the button to the "about me" page-->
+            <button>About me</button> <!--This connects the above link to the a button -->
+          </a>
+        </li>
+        <li class="nav-item"> <!--Creates a new element in the navigation bar-->
+          <a href="https://fin1ay.github.io/Coursework/Coursework/MyGoalsAndProjectsMC"><!--This serves to link the button to the appropriate page-->
+            <button>My Goals and Projects</button> <!--This connects the above link to the a button -->
+          </a>
+        </li>
+        <li class="nav-item"><!--Creates a new element in the navigation bar-->
+          <a href="https://fin1ay.github.io/Coursework/Coursework/CVMC"><!--This serves to link the button to the appropriate page-->
+            <button>CV</button> <!--This connects the above link to the a button -->
+          </a>
+        </li>
+        <li class="nav-item"><!--Creates a new element in the navigation bar-->
+          <a href="https://fin1ay.github.io/Coursework/Coursework/ContactMeMC"><!--This serves to link the button to the appropriate page-->
+            <button>Contact Me</button> <!--This connects the above link to the a button -->
+          </a>
+          <li class="nav-item"><!--Creates a new element in the navigation bar-->
+            <a href="https://fin1ay.github.io/Coursework/Coursework/PetAppreciationGalleryMC"><!--This serves to link the button to the appropriate page-->
+              <button>Pet Gallery</button> <!--This connects the above link to the a button -->
             </a>
           </li>
         </ul>
-      </nav>
-    </header>
-
+      </header>
 
     <div class="wrap">
-        <div class="floatleft">
+        <div class="floatleft"> <!--Creates a section that will seperate the page-->
         </div>
 
-
-        <div class="floatcenter">
+    <div class="floatcenter"> <!--The main section in the center of the page-->
         <center>
-       <h3>Overview</h3>
-       </center>
-       <p>I am an accomplished programmer with a large amount of experience in managing teams both large and small. I am currently a student at Robert Gordon's University </p>
+         <h3>Overview</h3> <!--Each h3 tag in this page serves as a small title for each section-->
+         </center>
+         <p>I am currently a first year student at Robert Gordon's University computing science course. I have a fair amount of experience in programming, going up to Advanced Higher in computing while at school. </p>
+
+         <hr> <!--Adds a horizontal line that seperates sections-->
+         <center>
+         <h3> Qualifications </h3>
+         </center>
+
+         <b>Highers</b><!--Adds bold text-->
+         <p class=below-gap>The Nicolson Institute ~ 2011 - 2017 </p>
+         <p class=below-gap>English(B), Maths(B), Physics(B), Computing(A), Chemistry(B)</p>
 
 
-       <center>
-       <h3> Qualifications </h3>
-       </center>
+         <b>Advanced Highers</b>
+         <p class=below-gap>  The Nicolson Institute ~ 2011 - 2017 </p>
+         <p class=below-gap>Computing(C) </p>
 
-       <b>Highers</b>
-       The Nicolson Institute ~ 2011 - 2017 <br>
-       English(B), Maths(B), Physics(B), Computing(B), Chemistry(B)
-       </p>
-       <center>
-       <h3>Skills</h3>
-       </center>
-       <p>
-         <ul>
-           <li> Good people skills </li>
-           <li> Strong business sense and ability to forecast major shifts in the marketplace</li>
-           <li> Understanding of what drives demand in the market </li>
-           <li> Expert negotiator </li>
-         </ul>
-       </p>
+         <hr>
+         <center><h3>Skills</h3></center>
 
-       <center>
-       <h3>Interests</h3>
-       </center>
-       <p> One of my main interests is in badminton. I spend the majority of my time playing doubles which requires a large amount of coordination. Another interest of mine is in card games, having weekly games with friends. </p>
+         <p class=below-gap>
+            <ol> <!--Creates an ordered list-->
+             <li id = "CVelements"> Good communication skills </li> <br>   <!--Adds a list element-->
+             <li id = "CVelements"> Understanding of what drives demand in the market </li> <br>
+             <li id = "CVelements"> Past experiences with programming </li> <br>
+           </ol>
+         </p>
+         <hr>
 
-       <p>I've been
+         <center>
+         <h3>Interests</h3>
+         </center>
+         <p> One of my main interests is in badminton. I spend the majority of my time playing doubles which requires a large amount of coordination. Another interest of mine is in card games, having weekly games with friends. </p>
 
-       <p>In 2014, I undertook work experience as a classroom assistant. I was greatly inspired by what I learned and subsequently I helped to run an after-school club for teenagers from the school's Learning Support department. Through organizing games I saw the students grow in confidence and independence. I improved my communication skills, both in large groups and also with vulnerable individuals.</p>
+            </div>
 
-       <p> I am a fluent Gaidhlig speaker, having been educated in the medium since the age of five. I feel that bilingual education has offered me great opportunities including improved communication skills. </p>
-
-
-
-        </div>
          <div class="floatright">
-
         </div>
     </main>
 
     <footer>
-      <a href="E:\Course Work\Coursework\CV.html"> <!--This serves to link the button to the "about me" page but with a different colour scheme-->
+      <a href="E:\Course Work\Coursework\CVMC.html"> <!--This serves to link the button to the "CV" page but with a different colour scheme-->
       <center><button>Change colour scheme</button></center> <!--This connects the above link to the a button -->
       </a>
-
     </footer>
-
-
   </body>
 </html>
