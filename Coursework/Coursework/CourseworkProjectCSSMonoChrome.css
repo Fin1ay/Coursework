@@ -1,0 +1,142 @@
+/*This is the alternate Cascading Style Sheet for all pages relating to my coursework project:
+Finlay Smith
+1703229
+
+It is identical in every way to the original but with the colours in it changed.
+
+Much of the styling could be broken down to individual IDs that would allow each part of each page to be formatted differently but I felt as though a consistant layout would be easier by using general statements and using IDs sparingly. I believe that this has worked however it would be something to keep in mind for future additions.
+Through use of Colour Contrast Anallyer, I was able to determine appropriate font sizes and colours for each page. I believe that passing the AA grade for luminosity was good enough as passing AAA would result in a more bland webpage. The alternate version I added passes AAA however. I believe the use of this added to the overall accessibility of the site.
+This was complimented by the use of the NoCoffee visual impairment simulator that allowed me to simulate each type of colour blindness. I believe the colours work well enough that it is readable with any of the types, however I added a more monochrome version of the site should people disagree.
+Possible additions would include the use of bootstrap (or other premade stylesheets) to add formatting however I chose to keep with my own style as bootstrapped websites tend to look too similar in my opinion*/
+
+
+img { /*This tag will affect all images */
+ float:left; /*This makes all images default to the left side of the screen*/
+ padding:2px; /*This creates padding around all images*/
+ background-color:darkgrey; /*This changes the colour of the outside padding*/
+}
+
+button{ /*This will affect all buttons.*/
+  padding: 9px 16px; /*This changes the size of the button*/
+  color: #grey; /*Changes the colour of the text in the button*/
+  font-size: 14px; /*Changed the size of the text in the buttons*/
+  background-color: darkgrey; /*Changes the colour of the button's background*/
+  border-color: #999999;
+}
+
+
+body{ /*This will affect everything in the bodies of the pages*/
+  font-family: Arial; /*All text will be set to Arial*/
+  background-color:grey; /*Changes the colour of the entire background of the page to the chosen colour*/
+  color: black; /*Changes the colour of the text on the screen to a light grey as it contrasts well with the red of the background*/
+  min-height: 100%;
+}
+
+header {
+  background-color: darkgrey;
+ height: 120px;
+ padding-left: 40px; /*This changed the distance from the left hand side of the start of the header*/
+
+ border-color: darkgrey; /*Changes the style of the outside of the header*/
+ border-style: solid;
+ border-width: 5px; /*Size of the border*/
+}
+
+
+footer { /*Affects everything in the footer*/
+ width: 100%;
+ bottom: 0;
+ background-color: #999999; /*Makes the colour of the footer a dark red*/
+ height: 100px; /*Makes the size of the footer*/
+}
+
+
+ul { /*Affects all unordered lists*/
+ list-style-type: none;
+}
+
+li { /*Automatically makes list elements stay to the left*/
+ float: left;
+}
+
+hr { /*This will affect all horizontal rules in the site */
+    display: block;          /**/
+    margin-top: 0.5em;       /**/
+    margin-bottom: 0.5em;    /*Sets the dimensions of the bars*/
+    border-width: 4px;       /**/
+    margin-left: auto;       /**/
+    margin-right: auto;      /**/
+}
+
+
+div.gallery { /*Changes all galleries*/
+margin: 5px; /*Adds a margin of five pixels*/
+border: 1px solid #ccc; /*Adds a solid border*/
+float: center;
+display: inline;
+width: 180px;
+}
+
+div.gallery:hover {
+border: 1px solid #777;
+}
+
+div.gallery img {
+width: 70%; /*Sets the amount of space the images will take up*/
+height: auto; /*The height will adjust with the width*/
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+
+.floatleft { /*formats the floatleft functions*/
+    float:left; /*The section will begin on the left of the screen*/
+    width: 8%; /*sets the width of the section*/
+    background-color: #999999; /*sets the main colour of the section*/
+    height: 1px; /*Ensures that the section is there so that it forces the central section into the correct position. If at auto or 0% then there are issues.*/
+    display: inline-block; /*This allows the sections to be displayed side by side*/
+}
+
+.floatright { /*formats the floatright functions*/
+    float:right; /*The section will begin on the right of the screen*/
+    width: 9%; /*sets the width of the section*/
+    background-color: #999999; /*sets the main colour of the section*/
+    height: 100%;
+    display: inline-block; /*This allows the sections to be displayed side by side*/
+}
+
+.floatcenter { /*formats the floatcenter functions*/
+    float:center; /*The section will begin in the center of the screen*/
+    width: 82%; /*sets the width of the section*/
+    background-color: darkgrey; /*sets the main colour of the section*/
+    height: 100%; /*Sets the section to continue until the content is filled*/
+    display: inline-block; /*This allows the sections to be displayed side by side*/
+    padding: 8px; /*Changes where the text begins in the section*/
+}
+
+.below-gap { /*Wherever this is used, there will be a gap placed below whatever uses it*/
+margin-bottom: 20px;
+}
+
+
+#homepageimg { /*will affect everything with the ID of "homepageimg"*/
+    width:119px;  /**/
+    height:119px; /*Sets the dimensions of the image*/
+    border:10;    /**/
+}
+
+
+#dogandMe { /*Changes the specific image with ID of "dogandme"*/
+    float: inherit; /*Makes text appear after the image*/
+    style=width:200px;      /**/
+    height:200px;           /**/
+    border:10;              /*Sets the dimensions of the image*/
+    border:2px solid black;  /**/
+}
+
+#CVelements{ /*Alters the list elements in the CV page*/
+  margin-left: 10px
+}
